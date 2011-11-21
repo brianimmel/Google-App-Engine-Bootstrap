@@ -1,3 +1,5 @@
+import os, sys
+
 # Add lib directory to path
 current_path = os.path.abspath(os.path.dirname(__file__))
 sys.path[0:0] = [
