@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
-from google.appengine.ext import db, blobstore
-from google.appengine.ext.db import polymodel
+from google.appengine.ext import db
 from google.appengine.api import images
-from google.appengine.api import users
 from webapp2 import cached_property
 from datetime import datetime
 import logging

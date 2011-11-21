@@ -1,15 +1,10 @@
-from utils import BaseHandler
+from utils import BasePageHandler
 from webapp2 import cached_property
 import logging
-from models import *
 
-
-class HomeHandler(BaseHandler):
+class HomeHandler(BasePageHandler):
     def get(self):
         context = {
-            "firstname": 'firstname',
-            "lastname": 'lastname',
-            "email": 'email',
-            "comments": 'what did you think?'
+
         }
         return self.render_template('index.html', **context)

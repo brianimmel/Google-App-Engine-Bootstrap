@@ -14,14 +14,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from google.appengine.ext import webapp
-from google.appengine.ext.webapp import util
-from webapp2_extras.routes import RedirectRoute
 import logging
 from config import config
+import webapp2
+from webapp2_extras.routes import RedirectRoute
+
 
 # URLs
-application = webapp.WSGIApplication([
+application = webapp2.WSGIApplication([
 
     #Home
     RedirectRoute('/', handler='handlers.site.HomeHandler', name='home', strict_slash=True),
@@ -34,8 +34,7 @@ application = webapp.WSGIApplication([
 def main():
     if config['server']['DEV']:
         logging.getLogger().setLevel(logging.DEBUG)
-    util.run_wsgi_app(application)
-
+    application.run()
 
 if __name__ == '__main__':
     main()
