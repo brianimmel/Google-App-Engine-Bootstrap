@@ -1,0 +1,5 @@
+Include common JS files here as needed
+---
+date.js - http://www.datejs.com/
+knockout.js - http://knockoutjs.com/
+less.js - http://lesscss.org/

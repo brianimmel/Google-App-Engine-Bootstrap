@@ -1,0 +1,40 @@
+// CSS Reset
+@import "bootstrap/reset.less";
+
+// Core
+@import "bootstrap/preboot.less";
+@import "bootstrap/scaffolding.less";
+
+// Styled patterns and elements
+@import "bootstrap/type.less";
+@import "bootstrap/forms.less";
+@import "bootstrap/tables.less";
+@import "bootstrap/patterns.less";
+
+
+// Helpers
+@import "helpers.less";
+// Colors
+@import "colors.less";
+
+
+
+
+body {
+    #gradient > .vertical(@color-background-1, @color-background-2);
+    color: @color-main-text;
+}
+
+a {
+    color: @color-link;
+}
+a:hover {
+    color: @color-link-hover;
+}
+a:visited {
+    color: @color-link-visited;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: @color-header;
+}
